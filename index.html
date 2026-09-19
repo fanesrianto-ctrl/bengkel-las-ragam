@@ -36,22 +36,29 @@
   .cta { background: #222; color: #fff; padding: 42px 20px; text-align: center; }
   footer { text-align: center; background: #111; color: #aaa; padding: 20px; font-size: 14px; }
   
-  @media (max-width: 800px) {
+@media (max-width: 800px) {
     .services { grid-template-columns: repeat(2, 1fr); }
   }
   @media (max-width: 500px) {
     .services { grid-template-columns: 1fr; }
   }
-.testimonial-head p{margin:0 auto;color:#666;line-height:1.6}
-.testimonial-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-.testimonial-card{background:#f8f8f8;border-radius:12px;padding:22px;box-shadow:0 4px 14px rgba(0,0,0,.08);border:1px solid #eee}
-.testimonial-card.example{background:#fbfbfb;border-style:dashed}
-.testimonial-name{font-weight:bold;font-size:18px;margin-bottom:4px}
-.testimonial-location{color:#666;font-size:14px;margin-bottom:8px}
-.stars{color:#f5b400;letter-spacing:2px;font-size:20px;margin-bottom:12px}
-.testimonial-card p{margin:0 0 12px;color:#444;line-height:1.55}
-.testimonial-card small{color:#888;font-size:12px}
-@media(max-width:700px){.testimonial-grid{grid-template-columns:1fr}}
+
+  .testimonials { background: #fff; padding: 55px 0 60px; }
+  .testimonial-head { text-align: center; margin-bottom: 30px; }
+  .testimonial-head h2 { margin: 0 0 10px; font-size: 30px; }
+  .testimonial-head p { margin: 0 auto; color: #666; line-height: 1.6; }
+  .testimonial-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .testimonial-card { background: #f8f8f8; border-radius: 12px; padding: 22px; }
+  .testimonial-card.example { background: #fafafa; border-style: dashed; }
+  .testimonial-name { font-weight: bold; font-size: 18px; margin-bottom: 4px; }
+  .testimonial-location { color: #666; font-size: 14px; margin-bottom: 8px; }
+  .stars { color: #f5b400; letter-spacing: 2px; font-size: 20px; margin-bottom: 12px; }
+  .testimonial-card p { margin: 0 0 12px; color: #444; line-height: 1.55; }
+  .testimonial-card small { color: #888; font-size: 12px; }
+
+  @media (max-width: 700px) {
+    .testimonial-grid { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
