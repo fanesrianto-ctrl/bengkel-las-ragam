@@ -17,6 +17,8 @@
 
   gtag('config', 'AW-18417063938');
 </script>
+<!-- Event snippet for Whatsapp conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
 function gtag_report_conversion(url) {
   var callback = function () {
@@ -25,7 +27,7 @@ function gtag_report_conversion(url) {
     }
   };
   gtag('event', 'conversion', {
-      'send_to': 'AW-18417063938/tNxiC0dK7IMdEIKw-M1E
+      'send_to': 'AW-18417063938/tNxiCODk7IMdEIKw-M1E',
       'value': 1.0,
       'currency': 'IDR',
       'event_callback': callback
@@ -33,6 +35,7 @@ function gtag_report_conversion(url) {
   return false;
 }
 </script>
+
   <style>
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
